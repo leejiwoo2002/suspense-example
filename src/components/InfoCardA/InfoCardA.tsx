@@ -1,9 +1,9 @@
 import React, {Suspense} from 'react';
 import {Card, CardContent, Skeleton, Typography} from "@mui/material";
-import NameArea from "@components/InfoCard/NameArea";
-import DescriptionArea from "@components/InfoCard/DescriptionArea";
+import NameArea from "@components/InfoCardA/NameArea";
+import DescriptionArea from "@components/InfoCardA/DescriptionArea";
 
-const InfoCard = () => {
+const InfoCardA = () => {
   return (
     <Card>
       <CardContent>
@@ -18,4 +18,4 @@ const InfoCard = () => {
   );
 };
 
-export default InfoCard;
+export default InfoCardA;

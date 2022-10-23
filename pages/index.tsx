@@ -1,11 +1,15 @@
-import React from 'react';
-import InfoCard from "@components/InfoCard/InfoCard";
-import { Stack } from "@mui/material";
+import React, {Suspense} from 'react';
+import InfoCardA from "@components/InfoCardA/InfoCardA";
+import InfoCardB from "@components/InfoCardB/InfoCardB";
+import {Skeleton, Stack} from "@mui/material";
 
 const Home = () => {
   return (
-    <Stack direction={"column"}>
-      <InfoCard/>
+    <Stack direction={"column"} gap={2}>
+      <InfoCardA/>
+      <Suspense fallback={<Skeleton variant="rectangular" height={200}/>}>
+        <InfoCardB/>
+      </Suspense>
     </Stack>
   );
 };
