@@ -1,10 +1,12 @@
 import React from 'react';
+import InfoCard from "@components/InfoCard/InfoCard";
+import { Stack } from "@mui/material";
 
 const Home = () => {
   return (
-    <div>
-      hello
-    </div>
+    <Stack direction={"column"}>
+      <InfoCard/>
+    </Stack>
   );
 };
 
